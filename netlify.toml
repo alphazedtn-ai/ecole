@@ -1,7 +1,9 @@
-
-  command = "npm run build"
-  publish = ".next"
+command = "npm run build"
+publish = ".next"
 
 [[plugins]]
-  package = "@netlify/plugin-nextjs"
+package = "@netlify/plugin-nextjs"
 
+[build]
+command = "npx vite build"
+publish = "dist"
